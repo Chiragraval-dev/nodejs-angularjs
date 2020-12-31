@@ -15,7 +15,7 @@ class LoginController {
                     }
                     else {
                         var send_data = profileset.recordset
-                        const user = send_data.filter(user => user.name == body.username)[0];
+                        const user = send_data.filter(user => user.email == body.username)[0];
                         if (!user) {
                             res.send({
                                 flag: 0,
