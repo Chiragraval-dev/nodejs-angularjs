@@ -40,5 +40,6 @@ class LoginController {
     }
 }
 
+
 const controller = new LoginController()
 module.exports = controller;
